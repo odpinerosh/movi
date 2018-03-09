@@ -1,0 +1,197 @@
+
+body {
+	margin: 0;
+	background-color: #fff;
+	font-family: Lato, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+aside {
+	background-color: #fd6766;
+}
+
+
+.container {
+	display: grid;
+	grid-template-columns: minmax(70px, 120px) 1fr;
+	grid-template-areas: ". form"
+	                     "navi pelis";
+	margin-top: 15px;
+	
+}
+
+.super {
+	box-shadow: 0px 10px 5px 0px rgba(227,227,227,1);
+	grid-area: form;
+	display: grid;
+	grid-template-columns: 25% 1fr 25%;
+	grid-template-areas: "supTitle supForm supUser";
+	align-items: center;
+	grid-gap: 10px;
+}
+
+.title {
+	grid-area: supTitle;
+	justify-self: start;
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.title img {
+	max-width: 70px;
+	max-height: 70px;
+}
+
+.title h1 {
+	display: inline-flex;
+	margin: 0 0 0 10px;
+}
+
+.form {
+	grid-area: supForm;
+	justify-self: center;
+	width: 100%;
+}
+
+.txtInput {
+	width: 100%;
+	padding: 10px;
+	border-radius: .25em;
+	border: 1px solid #b2b1b6;
+}
+
+.user {
+	grid-area: supUser;
+	justify-self: end;
+}
+
+.aUser {
+	display: flex;
+    align-items: center;
+}
+
+.aUser img {
+	max-width: 70px;
+	max-height: 70px;
+	border-radius: 50%;
+	margin: 0 15px;
+}
+
+.aUser h3 {
+	display: inline-flex;
+}
+
+.nav {
+	padding-top: 10px;
+	grid-area: navi;
+	display: grid;
+	align-content: stretch;
+	grid-template-rows: repeat(6, 15%);
+	grid-template-areas: "home"
+						 "favo"
+						 "reco"
+						 "mili"
+						 "."
+						 "setup";
+	
+}
+
+.menu {
+	
+	justify-content: center;
+	justify-items: center;
+	align-content: space-between;
+	padding: 0;
+}
+
+.menuItem {
+	padding-bottom: 16px;
+	text-align: center;
+}
+
+.liHome {
+	grid-area: home;
+}
+
+.liFavo {
+	grid-area: favo;
+}
+
+.liReco {
+	grid-area: reco;
+}
+
+.liMili {
+	grid-area: mili;
+}
+
+.liSetup {
+	grid-area: setup;
+}
+.movies {
+	grid-area: pelis;
+	display: grid;
+	padding: 20px;
+	align-content: start;
+}
+
+.movies h2 {
+	margin-bottom: 15px;
+}
+
+.inTheatres {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	justify-content: start;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.inTheatres a {
+	position: relative;
+	height: 25vh;
+}
+
+.inTheatres a:hover > .overlay  {
+	top: 0;
+}
+
+.inTheatres img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.overlay {
+	position: absolute;
+	top: 75%; bottom: 0; left: 0; right: 0;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	transition: .3s;
+}
+
+.overlay h3, .overlay p {
+	padding: 10px;
+}
+
+
+.txtOverLay {
+	font-size: .8rem;
+}
