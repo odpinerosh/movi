@@ -9,6 +9,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 ul {
 	padding: 0;
 }
@@ -21,12 +25,16 @@ h1, h2, h3 {
 	margin: 0;
 }
 
+h3 {
+	font-size: 1.17rem;
+}
+
 aside {
 	background-color: #fd6766;
 }
 
 
-.container {
+.SuperContainer {
 	display: grid;
 	grid-template-columns: minmax(70px, 120px) 1fr;
 	grid-template-areas: ". form"
@@ -84,6 +92,11 @@ aside {
 .aUser {
 	display: flex;
     align-items: center;
+    color: #424242;
+}
+
+.aUser:hover {
+	color: #424242;	
 }
 
 .aUser img {
@@ -125,6 +138,12 @@ aside {
 	text-align: center;
 }
 
+.menuItem a {
+	color: #fff;
+}
+
+
+
 .liHome {
 	grid-area: home;
 }
@@ -153,6 +172,7 @@ aside {
 
 .movies h2 {
 	margin-bottom: 15px;
+	font-family: Lato, sans-serif;
 }
 
 .inTheatres {
@@ -189,9 +209,11 @@ aside {
 
 .overlay h3, .overlay p {
 	padding: 10px;
+	font-family: Lato, sans-serif;
 }
 
 
 .txtOverLay {
 	font-size: .8rem;
+
 }
