@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+		
+		<!DOCTYPE html>
 <html lang="en" />
 <head>
 	<meta charset="UTF-8" />
@@ -6,7 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css" />
+
 	<title>Tu Película - Mooovi</title>
 </head>
 <body>
@@ -23,27 +24,25 @@
   				<button class="navbar-toggler supButton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     			<span class="navbar-toggler-icon"></span>
   				</button>
-  				<div class="secNavi">
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						
-							<form class="form-inline my-2 my-lg-0">
-				      			<input class="form-control mr-sm-2" type="search" placeholder="Busca tu pelicula, protagonista o director" aria-label="Search" style="width: 100%;">
-				    		</form>	
-						
-						
-					    	<ul class="navbar-nav mr-auto">
-								<li class="nav-item">
-									<a href="#" class="nav-link aUser">
-										<h3>Rick Graims</h3>
-										<img src="img/rick.jpg" alt="RickGraims" />
-									</a>
-								</li>
-							</ul>						
-						
+				<div class="collapse navbar-collapse supUser" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a href="#" class="nav-link">
+								Rick Graims
+								<img src="img/rick.jpg" alt="RickGraims" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+			    	<form class="form-inline my-2 my-lg-0">
+			      		<input class="form-control mr-sm-2" type="search" placeholder="Busca tu pelicula, protagonista o director" aria-label="Search" style="width: 100%;">
+			      		<!-- button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button -->
+			    	</form>
+			  	
+			
 
-					</div>
-  					
-  				</div>
+
 			</nav>
 		<!--/div-->
 
@@ -68,7 +67,7 @@
 		<section class="movies">
 			<h2>En cartelera</h2>
 			<div class="inTheatres">
-				<a href="">
+				<a href="#">
 					<img src="img/annihilation.jpg" alt="Annihilation" />
 					<div class="overlay">
 						<h3>Annihilation</h3>
@@ -76,7 +75,7 @@
 						que sufrirá aún más. Al final, no sabía lo que le esperaba y sufre mucho.</p>
 					</div>
 				</a>
-				<a href="">
+				<a href="#">
 					<img src="img/redsparrow.jpg" alt="Red Sparrow" />
 					<div class="overlay">
 						<h3>Red Sparrow</h3>
@@ -84,7 +83,7 @@
 						tan solo unas semanas y luego deja que se alejen, si les da la gana, pero igual mueren.</p>
 					</div>
 				</a>
-				<a href="">
+				<a href="#">
 					<img src="img/jumanji.jpg" alt="Jumanji" />
 					<div class="overlay">
 						<h3>Jumanji</h3>
@@ -95,7 +94,7 @@
 			</div>
 			<h2>Aclamadas por la crítica</h2>
 			<div class="inTheatres">
-				<a href="">
+				<a href="#">
 					<img src="img/madmax.jpg" alt="Mad Max" />
 					<div class="overlay">
 						<h3>Mad Max: Fury Road</h3>
@@ -104,7 +103,7 @@
 						con dos locos a bordo. Joe también está furioso.</p>
 					</div>
 				</a>
-				<a href="">
+				<a href="#">
 					<img src="img/fury.jpg" alt="Fury" />
 					<div class="overlay">
 						<h3>Fury</h3>
@@ -112,7 +111,7 @@
 						terminan lográndolo.</p>
 					</div>
 				</a>
-				<a href="">
+				<a href="#">
 					<img src="img/saving.jpg" alt="Saving P. Ryan" />
 					<div class="overlay">
 						<h3>Saving Private Ryan</h3>
@@ -124,14 +123,14 @@
 			</div>
 			<h2>No dejes de ver...</h2>
 			<div class="inTheatres">
-				<a href="">
+				<a href="#">
 					<img src="img/number-23.jpg" alt="Number 23" />
 					<div class="overlay">
 						<h3>The Number 23</h3>
 						<p class="txtOverLay">Un señor normal se obsesiona con el número 23. Eso es todo.</p>
 					</div>
 				</a>
-				<a href="">
+				<a href="#">
 					<img src="img/club.jpg" alt="Fight Club" />
 					<div class="overlay">
 						<h3>Fight Club</h3>
@@ -139,7 +138,7 @@
 						que decide romperle la madre a los miembros de un club del cual no se habla.</p>
 					</div>
 				</a>
-				<a href="">
+				<a href="#">
 					<img src="img/seven.jpg" alt="Seven" />
 					<div class="overlay">
 						<h3>Seven</h3>
@@ -155,4 +154,4 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>		
