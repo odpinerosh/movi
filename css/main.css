@@ -127,6 +127,14 @@ aside {
 }
 
 .navSide {
+
+    -webkit-transition: left .3s ease-in;
+    -most-transition: left .3s ease-in;
+    transition: left .3s ease-in;
+    z-index:1000;
+
+
+
 	padding-top: 10px;
 	grid-area: navi;
 	display: grid;
@@ -248,9 +256,9 @@ aside {
 
 
 	.SuperContainer {
-		grid-template-columns: 70px 1fr;
-		grid-template-areas: "form form"
-		                     "navi pelis";
+		grid-template-columns: 1fr;
+		grid-template-areas: "form"
+		                     "pelis";
 	}
 
 	.super {
@@ -262,7 +270,31 @@ aside {
 		                     ;
 	}
 
+	.navSide {
+		left: -15%;
+	    width: 0;
+	    position: absolute;
+	   
+	}
 
+	.navSide.active {
+            left: 0%;
+            width: 100%;
+	}
+
+
+	.switch {
+		z-index: 2000;
+		color: #fd6766;
+
+
+	}
+
+	.switch.active {
+		z-index: 2000;
+		color: #fff;
+
+	}
 	.inTheatres {
 		display: grid;
 		grid-template-columns: 1fr;
