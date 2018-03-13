@@ -39,12 +39,13 @@ aside {
 	grid-template-columns: minmax(70px, 120px) 1fr;
 	grid-template-areas: ". form"
 	                     "navi pelis";
-	margin-top: 15px;
+	background-color: #f8f9fa;	                     
+	/*margin-top: 15px;*/
 	
 }
 
 .super {
-	box-shadow: 0px 10px 5px 0px rgba(227,227,227,1);
+	box-shadow: 3px 10px 5px 0px rgba(227,227,227,1);
 	grid-area: form;
 	display: grid;
 	grid-template-columns: 25% 1fr;
@@ -75,7 +76,14 @@ aside {
 	grid-area: supForm;
 	display: grid;
 	justify-items: center;
+
+	
 }
+
+.secNavi div {
+	width: 100%;
+}
+
 
 
 
@@ -98,6 +106,7 @@ aside {
 
 .aUser {
 	display: flex;
+    justify-content: center;
     align-items: center;
     color: #424242;
 }
@@ -149,7 +158,10 @@ aside {
 	color: #fff;
 }
 
-
+.switch {
+	color: #fd6766;
+	cursor: pointer;
+}
 
 .liHome {
 	grid-area: home;
@@ -175,6 +187,7 @@ aside {
 	display: grid;
 	padding: 20px;
 	align-content: start;
+	background-color: #fff;
 }
 
 .movies h2 {
@@ -232,6 +245,13 @@ aside {
 	}
 
 @media (max-width: 767px) {
+
+
+	.SuperContainer {
+		grid-template-columns: 70px 1fr;
+		grid-template-areas: "form form"
+		                     "navi pelis";
+	}
 
 	.super {
 		display: grid;
