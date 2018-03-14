@@ -49,8 +49,9 @@
 		<!--/div-->
 
 		<aside class="navSide" id="aside">
+				<span class="swClose" id="swClose"><i class="fas fa-angle-left fa-2x"></i></span>
 				<div class="menuItem liHome">
-					<a href="#"><i class="fas fa-home fa-2x"></i><p class="menuP">Inicio</p></a>
+					<a href="#"><i class="fas fa-home fa-2x menuP"></i><p class="menuP">Inicio</p></a>
 				</div>
 				
 				<div class="menuItem liFavo">
@@ -68,7 +69,7 @@
 		</aside>
 
 		<section class="movies">
-			<span class="switch" id="switch"><i class="fas fa-angle-right fa-2x"></i></span>
+			<span class="switch" id="swOpen"><i class="fas fa-angle-right fa-2x"></i></span>
 			<h2>En cartelera</h2>
 			<div class="inTheatres">
 				<a href="">
@@ -96,6 +97,7 @@
 					</div>
 				</a>							
 			</div>
+
 			<h2>Aclamadas por la crítica</h2>
 			<div class="inTheatres">
 				<a href="">
@@ -159,13 +161,17 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		
-		var $burguerButton = document.getElementById('switch');
+		var $openButton = document.getElementById('swOpen');
+		var $closeButton = document.getElementById('swClose');
 		var $menu = document.getElementById('aside');
-		$burguerButton.addEventListener('click', function(){
-		$menu.classList.toggle('active');
-		$burguerButton.togle('active');
+		
+		$openButton.addEventListener('click', function(){
+			$menu.classList.toggle('active');
 		});
 
+		$closeButton.addEventListener('click', function (){
+			$menu.classList.toggle('active');			
+		});
 
 	</script>
 </body>

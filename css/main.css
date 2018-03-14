@@ -128,14 +128,12 @@ aside {
 
 .navSide {
 
-    -webkit-transition: left .3s ease-in;
-    -most-transition: left .3s ease-in;
-    transition: left .3s ease-in;
+    -webkit-transition: .3s ease-in-out;
+    -most-transition:  .3s ease-in-out;
+    transition: .3s ease-in-out;
     z-index:1000;
-
-
-
 	padding-top: 10px;
+	width: 100%;
 	grid-area: navi;
 	display: grid;
 	align-content: stretch;
@@ -149,13 +147,11 @@ aside {
 	
 }
 
-.menu {
-	
-	justify-content: center;
-	justify-items: center;
-	align-content: space-between;
-	padding: 0;
+.swClose {
+	color: #fff;
+
 }
+
 
 .menuItem {
 	padding-bottom: 16px;
@@ -212,9 +208,12 @@ aside {
 	margin-bottom: 15px;
 }
 
+.auxi {
+	color: #fff;
+}
+
 .inTheatres a {
 	position: relative;
-	height: 25vh;
 }
 
 .inTheatres a:hover > .overlay  {
@@ -223,7 +222,7 @@ aside {
 
 .inTheatres img {
 	width: 100%;
-	object-fit: cover;
+	/*object-fit: cover;*/
 }
 
 .overlay {
@@ -246,7 +245,11 @@ aside {
 
 }
 
-
+@media (min-width: 980px) {
+	.inTheatres a {
+		height: 25vh;
+}
+}
 @media (max-width: 980px) {
 	h1 {
 		font-size: 1.5rem;
@@ -254,6 +257,9 @@ aside {
 
 @media (max-width: 767px) {
 
+	aside {
+		background-color: rgba(253, 103, 102, .9)
+	}
 
 	.SuperContainer {
 		grid-template-columns: 1fr;
@@ -271,39 +277,54 @@ aside {
 	}
 
 	.navSide {
-		left: -15%;
-	    width: 0;
+		left: -100%;
+	    grid-template-rows: 5% repeat(5, .07fr);
+		grid-template-areas: "swClose"
+							 "home"
+							 "favo"
+							 "reco"
+							 "mili"
+					 		"setup";
+		align-content: start;
 	    position: absolute;
+	    height: 500vh;
+		align-content: start;
 	   
 	}
 
 	.navSide.active {
-            left: 0%;
-            width: 100%;
+        left: 0%;
 	}
 
+	.swClose {
+		grid-area: swClose;
+		justify-self: end;
+		padding-right: 30px;
+	}
 
 	.switch {
-		z-index: 2000;
+		
 		color: #fd6766;
 
-
 	}
 
-	.switch.active {
-		z-index: 2000;
-		color: #fff;
-
+	.menuItem {
+		padding-bottom: 0;
 	}
+
+	.menuP {
+		font-size: 1.5em;
+	}
+
+
 	.inTheatres {
 		display: grid;
 		grid-template-columns: 1fr;
-		height: 24vh;
-		grid-gap: 150px;
+		grid-template-rows: repeat(3, .333fr);
+		grid-gap: 50px;
+		margin-bottom: 10px;
 }
 
-
 	.overlay {
-		
-		top: 68%;
+		top: 0%;
 }
