@@ -214,6 +214,7 @@ aside {
 
 .inTheatres a {
 	position: relative;
+
 }
 
 .inTheatres a:hover > .overlay  {
@@ -267,6 +268,7 @@ aside {
 		grid-template-columns: 1fr;
 		grid-template-areas: "form"
 		                     "pelis";
+
 	}
 
 	.super {
@@ -288,7 +290,7 @@ aside {
 							 "mili"
 					 		"setup";
 		align-content: start;
-	    position: absolute;
+	    position: fixed;
 	    height: 100vh;
 		align-content: start;
 	   
@@ -325,7 +327,10 @@ aside {
 		grid-template-rows: repeat(3, .333fr);
 		grid-gap: 50px;
 		margin-bottom: 10px;
+
 }
+
+
 
 	.overlay {
 		top: 0%;
