@@ -148,8 +148,7 @@ aside {
 }
 
 .swClose {
-	color: #fff;
-
+	display: none;
 }
 
 
@@ -163,8 +162,7 @@ aside {
 }
 
 .switch {
-	color: #fd6766;
-	cursor: pointer;
+	display: none;
 }
 
 .liHome {
@@ -303,11 +301,14 @@ aside {
 	.swClose {
 		grid-area: swClose;
 		justify-self: end;
+		color: #fff;
 		padding-right: 30px;
+		display: inline-block;
 	}
 
 	.switch {
-		
+		display: inline-block;
+		cursor: pointer;
 		color: #fd6766;
 
 	}
