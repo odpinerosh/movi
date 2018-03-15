@@ -321,6 +321,10 @@ aside {
 		font-size: 1.5em;
 	}
 
+	.movies h2 {
+		font-size: 1.5em;
+	}
+
 
 	.inTheatres {
 		display: grid;
@@ -328,6 +332,7 @@ aside {
 		grid-template-rows: repeat(3, .333fr);
 		grid-gap: 50px;
 		margin-bottom: 10px;
+		grid-gap: 15px;
 
 }
 
